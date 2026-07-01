@@ -12,3 +12,25 @@ curl --location 'http://localhost:8080/api/patients' \
   "state": "NSW",
   "postcode": "2210"
 }'
+
+curl --location --request PUT 'http://localhost:8080/api/patients/1' \
+--header 'Content-Type: application/json' \
+--data '{
+  "pid": "P001",
+  "firstName": "Michael",
+  "lastName": "Stevin",
+  "dateOfBirth": "1998-01-01",
+  "gender": "Male",
+  "phoneNo": "0412345678",
+  "address": "40 Wattle St",
+  "suburb": "Sydney",
+  "state": "NSW",
+  "postcode": "2210"
+}'
+
+curl --location 'http://localhost:8080/api/patients?page=0&size=10'
+curl --location 'http://localhost:8080/api/patients?search=Michael&page=0&size=10'
+curl --location 'http://localhost:8080/api/patients/1'
+
+curl --location --request DELETE 'http://localhost:8080/api/patients/1'
+

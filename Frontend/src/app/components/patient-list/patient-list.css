@@ -1,0 +1,44 @@
+.page-container {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+.search-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-container mat-form-field {
+  width: 360px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.empty-message {
+  padding: 24px;
+  text-align: center;
+  color: #666;
+}

@@ -1,0 +1,14 @@
+curl --location 'http://localhost:8080/api/patients' \
+--header 'Content-Type: application/json' \
+--data '{
+  "pid": "P001",
+  "firstName": "Michael",
+  "lastName": "Stevin",
+  "dateOfBirth": "1998-01-01",
+  "gender": "Male",
+  "phoneNo": "0412345678",
+  "address": "40 Wattle Street",
+  "suburb": "Sydney",
+  "state": "NSW",
+  "postcode": "2210"
+}'
